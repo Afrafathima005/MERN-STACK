@@ -1,0 +1,45 @@
+// Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
+--------------------------------------------------------------------------
+const message = 'Hello world'
+console.log(message)
+//Hello world
+---------------------------------------------------------------------------
+const myMessage = 'Hello world'
+console.log("my data is:",myMessage)
+//my data is: Hello world
+--------------------------------------------------------------------------
+const myName='Afra'
+const myRoll='06'
+console.log("My name is: ",myName,"My Roll is: ",myRoll)
+console.log(`My name is:${myName} My roll is:${myRoll}`)
+//My name is:  Afra My Roll is:  06
+//My name is:Afra My roll is:06
+--------------------------------------------------------------
+let myNames='afra'
+function disp(){
+  myNames='selvi'
+  console.log('in inside block',myNames)
+  if(true){
+    myNames='priya'
+    console.log('in inside block',myNames)
+  }
+}
+disp()
+console.log('in outside block',myNames)
+
+//in inside block selvi
+//in inside block priya
+//in outside block priya
+---------------------------------------------------------
+const myName1='afra'
+function disp(){
+  const myName1='selvi'
+  console.log('in inside block',myName1)
+  if(true){
+    const myName1='priya'
+    console.log('in inside block',myName1)
+  }
+}
+disp()
+console.log('in outside block',myName1)
